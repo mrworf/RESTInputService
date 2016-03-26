@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_63BA79AF776BCE54DF3D8F9C04D5C11D"
+        "OwnerKey" = "8:_78950C10114C43298316EFC0356EC206"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_670F9F50FD08AF497D262BA37D6411C5"
+        "OwnerKey" = "8:_78950C10114C43298316EFC0356EC206"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_78950C10114C43298316EFC0356EC206"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -27,24 +39,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A4C00E49ACEB2DEF25A0861AD11E6B61"
-        "OwnerKey" = "8:_78950C10114C43298316EFC0356EC206"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CE85663687F33C3B2D0C9469D5C70E25"
-        "OwnerKey" = "8:_78950C10114C43298316EFC0356EC206"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D2F120F59D97B28E265C9AB96B4C9330"
-        "OwnerKey" = "8:_78950C10114C43298316EFC0356EC206"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_78950C10114C43298316EFC0356EC206"
         "MsmSig" = "8:_UNDEFINED"
@@ -52,19 +46,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A4C00E49ACEB2DEF25A0861AD11E6B61"
+        "OwnerKey" = "8:_670F9F50FD08AF497D262BA37D6411C5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D2F120F59D97B28E265C9AB96B4C9330"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CE85663687F33C3B2D0C9469D5C70E25"
+        "OwnerKey" = "8:_63BA79AF776BCE54DF3D8F9C04D5C11D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -81,7 +69,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\Setup1.msi"
+        "OutputFilename" = "8:Debug\\Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -113,7 +101,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\Setup1.msi"
+        "OutputFilename" = "8:Release\\Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -130,6 +118,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
     }
@@ -160,76 +156,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8E3D8BD4F04E511CF100226C2C2BDC47"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_8E3D8BD4F04E511CF100226C2C2BDC47"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_A0BA3EFB24CE41E99040EA583B187056"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A4C00E49ACEB2DEF25A0861AD11E6B61"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Grapevine, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_A4C00E49ACEB2DEF25A0861AD11E6B61"
-                    {
-                    "Name" = "8:Grapevine.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Grapevine.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_A0BA3EFB24CE41E99040EA583B187056"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CE85663687F33C3B2D0C9469D5C70E25"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_63BA79AF776BCE54DF3D8F9C04D5C11D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CE85663687F33C3B2D0C9469D5C70E25"
+                    "_63BA79AF776BCE54DF3D8F9C04D5C11D"
                     {
                     "Name" = "8:WindowsInput.dll"
                     "Attributes" = "3:512"
@@ -253,20 +187,51 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D2F120F59D97B28E265C9AB96B4C9330"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_670F9F50FD08AF497D262BA37D6411C5"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D2F120F59D97B28E265C9AB96B4C9330"
+                    "_670F9F50FD08AF497D262BA37D6411C5"
                     {
                     "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:Newtonsoft.Json.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_A0BA3EFB24CE41E99040EA583B187056"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8E3D8BD4F04E511CF100226C2C2BDC47"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_8E3D8BD4F04E511CF100226C2C2BDC47"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A0BA3EFB24CE41E99040EA583B187056"
@@ -341,7 +306,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:RESTInput Service"
         "ProductCode" = "8:{112B1E7E-C55E-499B-A1B8-5BBDC7EA9AF3}"
-        "PackageCode" = "8:{B96BE78A-858C-4C9C-ABC3-AAC1FB0D47AA}"
+        "PackageCode" = "8:{E76F4ECE-4313-451B-8FE2-E6757060EE4A}"
         "UpgradeCode" = "8:{843CB7B9-2E07-44E8-9459-DD5184D8306B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -876,7 +841,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_78950C10114C43298316EFC0356EC206"
             {
-            "SourcePath" = "8:..\\ConsoleApplication1\\obj\\Debug\\RESTInput.exe"
+            "SourcePath" = "8:..\\Service\\obj\\Release\\RESTInput.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A0BA3EFB24CE41E99040EA583B187056"
