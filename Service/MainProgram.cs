@@ -198,6 +198,42 @@ namespace RESTInput
             mappingDone = true;
         }
 
+        [RESTRoute(Method = Grapevine.HttpMethod.POST, PathInfo = @"/power")]
+        public void powerMode(HttpListenerContext ctx)
+        {
+            JObject json = null;
+            try
+            {
+                string data = this.GetPayload(ctx.Request);
+                if (!object.ReferenceEquals(data, null))
+                {
+                    json = JObject.Parse(data);
+                }
+            }
+            catch (Exception e)
+            {
+                this.InternalServerError(ctx, e);
+                return;
+            }
+            if (json["state"] != null) {
+                if (((string)json["state"]).ToLower().Equals("suspend"))
+                {
+                    this.SendTextResponse(ctx, "OK");
+                    Application.SetSuspendState(PowerState.Suspend, true, true);
+                } else if (((string)json["state"]).ToLower().Equals("hibernate"))
+                {
+                    this.SendTextResponse(ctx, "OK");
+                    Application.SetSuspendState(PowerState.Hibernate, true, true);
+                } else
+                {
+                    this.SendTextResponse(ctx, "Invalid");
+                }
+            } else
+            {
+                this.SendTextResponse(ctx, "Invalid");
+            }
+        }
+
         [RESTRoute(Method = Grapevine.HttpMethod.GET, PathInfo = @"/actions")]
         public void getActions(HttpListenerContext ctx)
         {
